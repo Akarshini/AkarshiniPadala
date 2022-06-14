@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script lang="javascript">
+        function amountTocoins(amount, coins) 
+{
+ if (amount === 0) 
+  {
+     return [];
+   } 
+ else
+   {
+     if (amount >= coins[0]) 
+       {
+        left = (amount - coins[0]);
+        return [coins[0]].concat( amountTocoins(left, coins) );
+        } 
+      else
+        {
+         coins.shift();
+         return amountTocoins(amount, coins);
+        }
+    }
+} 
+console.log(amountTocoins(46, [25, 10, 5, 2,1]));
+    </script>
+</body>
+</html>
