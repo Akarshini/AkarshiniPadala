@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script lang="javascript">
+           var length_of_array=new Array();
+length_of_array[1]=33;
+length_of_array[2]=44;
+length_of_array[3]=66;
+length_of_array[5]=undefined;
+length_of_array[9]=44;
+console.log(length_of_array.length);//length 10
+for(var i in length_of_array){
+    if(length_of_array.hasOwnProperty(i)){
+        console.log(length_of_array[i]);
+    }
+}     
+        </script>
+    </head>
+</html>
+    
