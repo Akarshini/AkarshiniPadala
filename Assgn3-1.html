@@ -3,10 +3,23 @@
 <script lang="javascript">
     
 // Q1.Write a function to find the largest string in an array of strings making use of the reduce function. You can, of course, do it using a loop, but see how short your code can be if you make use of the filter function.
-    var longest = arr.reduce(
-    function (a, b) {
-        return a.length > b.length ? a : b;
-    }
-);
+
+//reduce method
+function findLongestWord(str) {
+  var longestWord = str.split(' ').reduce(function(longest, currentWord) {
+    return currentWord.length > longest.length ? currentWord : longest;
+  }, "");
+  return longestWord.length;
+}
+console.log(findLongestWord("What a beautiful day"));
+
+//using map & filter method
+function long(str) {
+  var max = str[0].length;
+  str.map(v => max = Math.max(max, v.length));
+  result = str.filter(v => v.length == max);
+  return result;
+}
+console.log(long(['What', 'a','Beautiful','day']));
 </script>
 </html>
