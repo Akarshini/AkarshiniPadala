@@ -1,0 +1,17 @@
+<html>
+<head></head>
+<script lang="javascript">
+    
+//Write a function that takes an array and a criteria function(for filtering) and returns the array of those elements which do not fulfill the criteria. The criteria function should take any element as argument and return a boolean value.
+//Removing duplicates from the array (criteria)
+var myArray = [1,1,2,3,4,5,6,1,2,8,2,5,2,52,48,123,43,52];
+console.log(myArray.filter(function(value, index, array) {
+   return array.indexOf(value) === index; 
+}));
+
+//filter boolean
+var myBoolArray = [true, false, 4, 0, "abc", "", "0"];
+console.log(myBoolArray.filter(Boolean));
+console.log(myBoolArray);
+</script>
+</html>
