@@ -1,0 +1,21 @@
+
+<script>
+    var image = document.getElementById("aaa");
+    var img_array=["http://png-4.findicons.com/files/icons/1008/quiet/256/java.png","http://icons.iconarchive.com/icons/tpdkdesign.net/refresh-cl/256/System-Java-icon.png"];
+    var index=0;
+    function slide()
+    {
+    
+        document["aaa"].src = img_array[index];
+        index++;
+        if(index>=img_array.length)
+        {
+        index=0;
+        }
+    }
+    setInterval("slide()",3000);
+    </script>
+    </head>
+    <body>
+    <img id="aaa" src="http://www.tutorialsscripts.com/free-icons/programming-language/java-icons/purple-java-icon-256-x-256.gif" width="400" height="400" name="image" />
+    

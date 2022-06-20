@@ -1,3 +1,5 @@
+//constructor function to represent a Rectangle, which can calculate its area and perimeter.
+
 function circle(radius)
 {
     this.radius = radius;
