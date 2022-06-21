@@ -1,24 +1,33 @@
-<body>
-    <input type="button" value="Set paragraph background color" onclick="set_background()">
-    <p>HII</p>
-    <p>HELLO!!  </p>
-</body>
-<script>//change the background color of a paragraph when a button is clicked.
-  function set_background() {
-    // now, get all the p elements in the document
-    const paragraphs = document.getElementsByTagName("p");
+<!DOCTYPE html>
+<html>
   
-    // get the second paragraph from the list
-    const secondParagraph = paragraphs[1];
-    
-    // set the inline style
-    secondParagraph.style.background = "pink";
-  }
-
-// appendchild (see this one)
-const node = document.createElement("li");
-const textnode = document.createTextNode("Water");
-node.appendChild(textnode);
-document.getElementById("myList").appendChild(node);
-  </script>
-
+<head>
+    <title>How to Append HTML Code to a Div using Javascript</title>
+    <style>
+        body {
+            text-align: center;
+              
+            padding: 5%;
+        }
+        h1{
+            color:cornflowerblue;
+        }
+    </style>
+</head>
+  
+<body>
+    <div id="add_to_me">
+        <h1>JAVASCRIPT</h1>
+        <p>Text which has already been typed into the div</p>
+    </div>
+  
+    <button onclick="addCode()">Add Stuff</button>
+    <script>
+        function addCode() {
+            document.getElementById("add_to_me").innerHTML += 
+              "<h3>This is the text which has been inserted by JS</h3>";
+        }
+    </script>
+</body>
+  
+</html>
