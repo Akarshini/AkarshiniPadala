@@ -1,13 +1,5 @@
 
-//dowhile
-var n:number = 5 
-while(n > 5) { 
-   console.log("Entered while") 
-} 
-do { 
-   console.log("Entered do…while") 
-} 
-while(n>5)
+
 //for loop
 for (let i = 0; i < 3; i++) {
     console.log ("Block statement execution no." + i);
