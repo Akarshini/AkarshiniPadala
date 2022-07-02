@@ -1,8 +1,8 @@
-class Person {
+class Human {
     name: string;
 }
 
-interface IEmployee extends Person { 
+interface IEmployee extends Human{ 
     empCode: number;
 }
 
