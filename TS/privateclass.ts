@@ -9,4 +9,4 @@ class Employee {
     }
 }
 
-let empl= new Employee("Anil").empName; //empName is private and & acc within class Employee
+let emplye= new Employee("Anil").empName; //empName is private and & accessed within class Employee

@@ -1,4 +1,4 @@
-class people {
+class peoples {
     constructor(private firstName: string, private lastName: string) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -10,7 +10,7 @@ class people {
         return `This is ${this.firstName} ${this.lastName}.`;
     }
 }
-class Empl extends people {
+class Emply extends people {
     constructor(
         firstName: string,
         lastName: string,

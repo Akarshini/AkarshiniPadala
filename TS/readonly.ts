@@ -9,5 +9,5 @@ class Employe {
     }
 }
 
-let emp = new Employe('Anil');
+let empp = new Employe('Anil');
 emp.empName = 'Anil Singh';

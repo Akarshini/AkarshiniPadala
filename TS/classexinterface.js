@@ -1,5 +1,5 @@
-var Person = /** @class */ (function () {
-    function Person() {
+var Person = /** @class */ (function (){
+    function Person(){
     }
     return Person;
 }());
